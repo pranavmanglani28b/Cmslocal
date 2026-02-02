@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Persistent Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="chat-container">
+        <header>
+            <h2>P2P Chat</h2>
+            <input type="text" id="username" placeholder="Your Name" maxlength="20">
+        </header>
+
+        <ul id="messages"></ul>
+
+        <form id="chat-form">
+            <input type="text" id="msg-input" placeholder="Type a message..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
